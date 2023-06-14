@@ -1,0 +1,14 @@
+package com.rubypaper.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BoardController {
+
+	public BoardController() {
+		System.out.println("=".repeat(50));
+		System.out.println("BoardController가 생성되었습니다.");
+		System.out.println("=".repeat(50));
+	}
+	
+}

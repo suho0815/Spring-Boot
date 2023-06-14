@@ -1,0 +1,68 @@
+package com.rubypaper.controller;
+
+import java.util.Date;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.rubypaper.domain.BoardVO;
+
+@RestController
+public class BoardController {
+
+	public BoardController() {
+		System.out.println("=".repeat(50));
+		System.out.println("BoardController가 생성되었습니다.");
+		System.out.println("=".repeat(50));
+	}
+	
+	@GetMapping("/hello")
+	public String hello1(String name) {
+		return "Get Hello : " + name;
+	}
+	
+	@PostMapping("/hello")
+	public String hello2(String name) {
+		return "Post Hello : " + name;
+	}
+	
+	@PutMapping("/hello")
+	public String hello3(String name) {
+		return "Put Hello : " + name;
+	}
+	@DeleteMapping("/hello")
+	public String hello4(String name) {
+		return "Delete Hello : " + name;
+	}
+	
+	@GetMapping("/getBoard")
+	public BoardVO getBoard() {
+		BoardVO board = new BoardVO();
+		board.setSeq(1);
+		board.setTitle("테스트 제목...");
+		board.setWriter("테스터");
+		board.setContent("테스트 내용입니다........");
+		board.CreateDate(new Date());
+		board.setCnt(0);
+		
+		return board;
+	}
+	
+	@GetMapping("/getBoard1")
+	public BoardVO getBoard1() {
+		BoardVO board = new BoardVO();
+		board.setSeq(1);
+		board.setTitle("테스트 제목...");
+		board.setWriter("테스터");
+		board.setContent("테스트 내용입니다........");
+		board.CreateDate(new Date());
+		board.setCnt(0);
+		
+		return board;
+	}
+	
+	
+}

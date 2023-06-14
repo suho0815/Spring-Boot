@@ -1,0 +1,31 @@
+package edu.pnu.dao;
+
+import java.sql.Connection;
+import java.util.List;
+
+import edu.pnu.domain.Member;
+
+public class MemberDao {
+
+	private Connection con;
+	
+	//DB Connection 설정
+	public MemberDao() {
+		
+	}
+	
+	public void insertMember(Member m) {
+		
+	}
+	
+	public List<Member> getMembers(){
+		
+		return null;
+	}
+	
+	public Member getMember(Long id){
+		
+		return null;
+	}
+	
+}

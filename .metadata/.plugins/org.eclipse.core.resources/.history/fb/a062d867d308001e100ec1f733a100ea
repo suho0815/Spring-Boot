@@ -1,0 +1,20 @@
+package edu.pnu.service;
+
+import edu.pnu.dao.MemberDaoH2impl;
+import edu.pnu.dao.MemberDaoListimpl;
+
+public class MemberService {
+	
+	MemberDaoListimpl memberDaoList;
+	MemberDaoH2impl memberDaoH2;
+	
+	public MemberService() {
+		memberDaoList = new MemberDaoListimpl();
+		memberDaoH2 = new MemberDaoH2impl();
+	}
+	
+	
+	
+	
+	
+}

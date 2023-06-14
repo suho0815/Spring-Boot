@@ -1,0 +1,44 @@
+package edu.pnu.service;
+
+import java.util.List;
+
+import edu.pnu.dao.MemberDaoH2impl;
+import edu.pnu.dao.MemberDaoListimpl;
+import edu.pnu.domain.MemberVO;
+
+public class MemberService {
+	
+	MemberDaoListimpl memberDaoList;
+	MemberDaoH2impl memberDaoH2;
+	
+	public MemberService() {
+		memberDaoList = new MemberDaoListimpl();
+		memberDaoH2 = new MemberDaoH2impl();
+	}
+	
+	public List<MemberVO> getMembers() {
+		return memberDaoList.getMembers();
+		//return memberDaoH2.getMembers();
+	}
+	
+	public MemberVO getMember(Integer id) {
+		return memberDaoList.getMember(id);
+		//return memberDaoH2.getMember(id);
+	}
+	
+	public MemberVO addMember(MemberVO member) {
+		return memberDaoList.addMember(member);
+		//return memberDaoH2.addMember(member);
+	}
+	
+	public MemberVO updateMember(MemberVO member) {
+		
+		return null;
+	}
+	
+	public int deleteMemeber(Integer id) {
+		
+		return 0;
+	}
+	
+}

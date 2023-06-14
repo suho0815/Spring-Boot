@@ -1,0 +1,37 @@
+package com.rubypaper.controller;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BoardController {
+
+	public BoardController() {
+		System.out.println("=".repeat(50));
+		System.out.println("BoardController가 생성되었습니다.");
+		System.out.println("=".repeat(50));
+	}
+	
+	@GetMapping("/hello")
+	public String hello1(String name) {
+		return "Get Hello : " + name;
+	}
+	
+	@PostMapping("/hello")
+	public String hello2(String name) {
+		return "Post Hello : " + name;
+	}
+	
+	@PutMapping("/hello")
+	public String hello3(String name) {
+		return "Put Hello : " + name;
+	}
+	@DeleteMapping("/hello")
+	public String hello4(String name) {
+		return "Delete Hello : " + name;
+	}
+	
+}

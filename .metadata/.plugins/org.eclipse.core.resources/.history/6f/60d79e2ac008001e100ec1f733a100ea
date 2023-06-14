@@ -1,0 +1,42 @@
+package edu.pnu.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.util.List;
+
+import edu.pnu.domain.Member;
+
+public class MemberDao {
+
+	private Connection con;
+	private String driver;
+	private String url;
+	private String user;
+	private String pass;
+	
+	//DB Connection 설정
+	public MemberDao() {
+		try {
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, user, pass);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public void insertMember(Member m) {
+		
+	}
+	
+	public List<Member> getMembers(){
+		
+		return null;
+	}
+	
+	public Member getMember(Long id){
+		
+		return null;
+	}
+	
+}

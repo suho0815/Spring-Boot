@@ -1,0 +1,13 @@
+package edu.pnu.domain;
+
+import java.util.Date;
+
+public class Member {
+	private Long id;
+	private String pass;
+	private String name;
+	private Date regidate;
+	
+	
+	
+}

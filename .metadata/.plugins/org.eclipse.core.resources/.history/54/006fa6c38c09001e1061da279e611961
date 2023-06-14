@@ -1,0 +1,46 @@
+package edu.pnu.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import edu.pnu.domain.MemberVO;
+import edu.pnu.service.MemberService;
+
+@RestController
+public class MemberController {
+	
+	MemberService service;
+	
+	public MemberController() {
+		service = new MemberService();
+	}
+	
+public List<MemberVO> getMembers() {
+		
+		return .getMembers();
+	}
+	
+	public MemberVO getMember(Integer id) {
+		
+		return memberDao.getMember(id);
+	}
+	
+	public MemberVO addMember(MemberVO member) {
+		
+		return memberDao.addMember(member);
+	}
+	
+	public MemberVO updateMember(MemberVO member) {
+		
+		return memberDao.updateMember(member);
+	}
+	
+	public int deleteMemeber(Integer id) {
+		
+		return memberDao.deleteMemeber(id);
+	}
+	
+	
+	
+}

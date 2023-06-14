@@ -1,0 +1,10 @@
+package edu.pnu.service;
+
+import edu.pnu.domain.Member;
+
+public class MemberService {
+	
+	public Member getMember(Long id) {
+		return null;
+	}
+}

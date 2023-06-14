@@ -1,0 +1,122 @@
+package edu.pnu.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.pnu.domain.Member;
+
+public class MemberDao {
+
+	private String driver = "org.h2.Driver";
+	private String url = "jdbc:h2:tcp://localhost/~/mission2";
+	private String username = "scott";
+	private String password = "tiger";
+	
+	private Connection con;
+	
+	public MemberDao() {
+		try {
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, username, password);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public Member getMember(Long id) {
+		try {
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(String.format("select * from Member where id=%d", id));
+			
+			rs.next();
+			
+			Member m = Member.builder()
+					.id(rs.getLong("id"))
+					.pass(rs.getString("pass"))
+					.name(rs.getString("name"))
+					.regidate(rs.getDate("regidate"))
+					.build();
+			
+			rs.close();
+			stmt.close();
+			
+			return m;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	
+	public List<Member> getAllMember(){
+		List<Member> list = new ArrayList<>();
+		try {
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(String.format("select * from Member"));
+			
+			while(rs.next()) {
+				Member m = Member.builder()
+						.id(rs.getLong("id"))
+						.pass(rs.getString("pass"))
+						.name(rs.getString("name"))
+						.regidate(rs.getDate("regidate"))
+						.build();
+				list.add(m);
+			}
+			return list;
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	
+	public Member insertMember() {
+		
+		try {
+			String pass = "pass";
+			String name = "name";
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(String.format("insert into(pass, name) values (%s, %s)", pass, name));
+			//String sql = "insert into(pass, name) values (?, ?)";
+//			PreparedStatement psmt = con.prepareStatement(sql);
+//			psmt.setString(1,"pass");
+//			psmt.setString(2,"name");
+//			ResultSet rs = psmt.executeUpdate();
+			
+			Member m = Member.builder()
+					.id(rs.getLong("id"))
+					.pass(rs.getString("pass"))
+					.name(rs.getString("name"))
+					.regidate(rs.getDate("regidate"))
+					.build();
+			
+			rs.close();
+			psmt.close();
+			
+			return m;
+			
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	
+	public Member updateMember() {
+		return null;
+	}
+	
+	public Member deleteMember() {
+		
+		return null;
+	}
+	
+}
