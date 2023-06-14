@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import edu.pnu.dao.log.LogDao;
 import edu.pnu.dao.log.LogDaoFileImpl;
+import edu.pnu.dao.log.LogDaoH2Impl;
 import edu.pnu.dao.member.MemberDaoH2Impl;
 import edu.pnu.dao.member.MemberInterface;
 import edu.pnu.domain.MemberVO;
@@ -20,6 +21,14 @@ public class MemberService {
 	
 	@Autowired
 	private LogDao logDao;
+	
+	public MemberService() {
+	      memberDao = new MemberDaoH2Impl();
+	      // memberDao = new MemberDaoListImpl();
+
+	      logDao = new LogDaoH2Impl();
+	      // logDao = new LogDaoFileImpl();
+	}
 	
 	@SuppressWarnings("unchecked")
 	public List<MemberVO> getMembers() {

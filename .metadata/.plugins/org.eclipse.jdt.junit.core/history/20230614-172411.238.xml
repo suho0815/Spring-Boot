@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Mission2ApplicationTests" project="mission21" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.pnu.Mission2ApplicationTests" time="0.459" displayname="Mission2ApplicationTests" uniqueid="[engine:junit-jupiter]/[class:edu.pnu.Mission2ApplicationTests]">
+    <testcase name="contextLoads1" classname="edu.pnu.Mission2ApplicationTests" time="0.432" displayname="contextLoads1()" uniqueid="[engine:junit-jupiter]/[class:edu.pnu.Mission2ApplicationTests]/[method:contextLoads1()]"/>
+    <testcase name="contextLoads2" classname="edu.pnu.Mission2ApplicationTests" time="0.009" displayname="contextLoads2()" uniqueid="[engine:junit-jupiter]/[class:edu.pnu.Mission2ApplicationTests]/[method:contextLoads2()]"/>
+    <testcase name="contextLoads3" classname="edu.pnu.Mission2ApplicationTests" time="0.008" displayname="contextLoads3()" uniqueid="[engine:junit-jupiter]/[class:edu.pnu.Mission2ApplicationTests]/[method:contextLoads3()]"/>
+    <testcase name="dataSourceTest" classname="edu.pnu.Mission2ApplicationTests" time="0.006" displayname="dataSourceTest()" uniqueid="[engine:junit-jupiter]/[class:edu.pnu.Mission2ApplicationTests]/[method:dataSourceTest()]"/>
+  </testsuite>
+</testrun>

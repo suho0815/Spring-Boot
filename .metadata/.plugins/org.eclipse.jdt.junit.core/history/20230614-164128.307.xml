@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Mission5ApplicationTests" project="Mission5" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.pnu.Mission5ApplicationTests" time="0.324" displayname="Mission5ApplicationTests" uniqueid="[engine:junit-jupiter]/[class:edu.pnu.Mission5ApplicationTests]">
+    <testcase name="test" classname="edu.pnu.Mission5ApplicationTests" time="0.324" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:edu.pnu.Mission5ApplicationTests]/[method:test()]"/>
+  </testsuite>
+</testrun>
