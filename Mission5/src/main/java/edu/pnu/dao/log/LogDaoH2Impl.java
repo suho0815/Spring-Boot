@@ -13,14 +13,14 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class LogDaoH2Impl implements LogDao {
 	@Autowired
-	private DataSource datasource; 
+	private DataSource datasource;
 
 	@Override
 	public void addLog(String method, String sqlstring, boolean success) {
 		
 		PreparedStatement psmt = null;
-		try {
-			psmt = datasource.getConnection().prepareStatement("insert into dblog (method,sqlstring,success) values (?,?,?)");
+		try (Connection con =datasource.getConnection()){
+			psmt = con.prepareStatement("insert into dblog (method,sqlstring,success) values (?,?,?)");
 			psmt.setString(1,  method);
 			psmt.setString(2, sqlstring);
 			psmt.setBoolean(3,  success);

@@ -29,9 +29,9 @@ public class MemberDaoH2Impl implements MemberInterface {
 		Statement st = null;
 		ResultSet rs = null;
 		String sqlString = "select * from member order by id asc";
-		try {
+		try (Connection con = datasource.getConnection()){
 			List<MemberVO> list = new ArrayList<>();
-			st = datasource.getConnection().createStatement();
+			st = con.createStatement();
 			rs = st.executeQuery(sqlString);
 			while(rs.next() ) {
 				MemberVO m = new MemberVO();

@@ -4,10 +4,10 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import edu.pnu.dao.log.LogDao;
-import edu.pnu.dao.log.LogDaoFileImpl;
 import edu.pnu.dao.log.LogDaoH2Impl;
 import edu.pnu.dao.member.MemberDaoH2Impl;
 import edu.pnu.dao.member.MemberInterface;
@@ -16,7 +16,8 @@ import edu.pnu.domain.MemberVO;
 @Service
 public class MemberService {
 
-	@Autowired
+	@Autowired //다형성 적용 됨 (상속받은 것도 가져올 수 있음)
+	//@Qualifier("빈 이름") //@Component("obj1") 어노테이션을 이용하여 빈 이름 지정하여 주입
 	private MemberInterface memberDao;
 	
 	@Autowired
