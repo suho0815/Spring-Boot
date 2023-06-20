@@ -1,5 +1,0 @@
-package edu.pnu.dao;
-
-public interface MemberInterface {
-	
-}

@@ -58,11 +58,11 @@ public class BoardController {
 		return String.format("seq가 %d인 데이터가 삭제됨", id);
 	}
 	//페이징
-	@GetMapping("/boardpage")
-	public Page<Board> findPage() {
-		Pageable pageing = PageRequest.of(0, 5);
-		return boardRepo.findAll(pageing);
-	}
+//	@GetMapping("/boardpage")
+//	public Page<Board> findPage() {
+//		Pageable pageing = PageRequest.of(0, 5);
+//		return boardRepo.findAll(pageing);
+//	}
 	
 	
 	@GetMapping("/boardtitlecontain")
