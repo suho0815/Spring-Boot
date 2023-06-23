@@ -9971,3 +9971,471 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 12:24:14.370
 !MESSAGE Classpath changed for project: Chapter06Th
+!SESSION 2023-06-23 14:12:58.868 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-06-23 14:13:00.164
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-06-23 14:13:10.090
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-23 14:13:10.090
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2023-06-23 14:13:13.535
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-23 14:13:13.535
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-06-23 14:13:14.492
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:14.808
+!MESSAGE Boot project ADDED: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:14.809
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:14.810
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:14.830
+!MESSAGE Boot project ADDED: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:14.839
+!MESSAGE Boot project ADDED: Chapter03
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-06-23 14:13:14.854
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\01DevelopKits\sts-4.18.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\01DevelopKits\sts-4.18.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\01DevelopKits\sts-4.18.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\01DevelopKits\sts-4.18.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/03Workspaces-STS4/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1687497194853
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:14.854
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-06-23 14:13:14.886
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10912
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-06-23 14:13:14.915
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:14.998
+!MESSAGE Boot project ADDED: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.011
+!MESSAGE Boot project ADDED: Chapter06
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.119
+!MESSAGE Boot project ADDED: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.153
+!MESSAGE Boot project ADDED: DItest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.241
+!MESSAGE Boot project ADDED: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.258
+!MESSAGE Boot project ADDED: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.278
+!MESSAGE Boot project ADDED: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.318
+!MESSAGE Boot project ADDED: Mission41
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.331
+!MESSAGE Boot project ADDED: Mission42
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.338
+!MESSAGE Boot project ADDED: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.346
+!MESSAGE Boot project ADDED: Mission99
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.357
+!MESSAGE Boot project ADDED: mission2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:15.367
+!MESSAGE Boot project ADDED: mission21
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:13:17.172
+!MESSAGE Classpath changed for project: Chapter05
+
+!ENTRY org.eclipse.core.filebuffers 4 2 2023-06-23 14:13:25.952
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.filebuffers".
+!STACK 0
+java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:409)
+	at java.base/java.util.Timer.schedule(Timer.java:205)
+	at org.eclipse.lsp4e.LanguageServerWrapper.startStopTimer(LanguageServerWrapper.java:405)
+	at org.eclipse.lsp4e.LanguageServerWrapper.disconnect(LanguageServerWrapper.java:637)
+	at org.eclipse.lsp4e.LanguageServerWrapper$1.bufferDisposed(LanguageServerWrapper.java:117)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$12.run(TextFileBufferManager.java:787)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireBufferDisposed(TextFileBufferManager.java:784)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.disconnect(TextFileBufferManager.java:206)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers$1.runInWorkspace(LSPDiagnosticsToMarkers.java:181)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.filebuffers 4 2 2023-06-23 14:13:25.952
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.filebuffers".
+!STACK 0
+java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:409)
+	at java.base/java.util.Timer.schedule(Timer.java:205)
+	at org.eclipse.lsp4e.LanguageServerWrapper.startStopTimer(LanguageServerWrapper.java:405)
+	at org.eclipse.lsp4e.LanguageServerWrapper.disconnect(LanguageServerWrapper.java:637)
+	at org.eclipse.lsp4e.LanguageServerWrapper$1.bufferDisposed(LanguageServerWrapper.java:117)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$12.run(TextFileBufferManager.java:787)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireBufferDisposed(TextFileBufferManager.java:784)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.disconnect(TextFileBufferManager.java:206)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers$1.runInWorkspace(LSPDiagnosticsToMarkers.java:181)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:21:04.264
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-23 14:25:53.054
+!MESSAGE Unable to compute end of document
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1054)
+	at org.eclipse.jface.text.TreeLineTracker.lineByOffset(TreeLineTracker.java:268)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1122)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:246)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:872)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOfOffset(SynchronizableDocument.java:334)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toPosition(LSPEclipseUtils.java:178)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:44)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:80)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
+	at org.eclipse.jface.text.codemining.CodeMiningStrategy.reconcile(CodeMiningStrategy.java:56)
+	at org.eclipse.jface.text.reconciler.Reconciler.process(Reconciler.java:151)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:28:51.524
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:31:55.771
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:34:21.967
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:34:36.380
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:35:27.635
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:35:54.319
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:36:47.363
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:36:58.737
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:37:08.938
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:37:35.385
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:38:45.930
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:39:34.289
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:39:54.949
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:45:02.644
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:45:06.414
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:45:18.228
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:46:03.095
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:47:34.200
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:51:58.406
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:54:10.657
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:55:23.208
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:58:55.347
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 14:59:47.629
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 15:00:29.672
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-23 15:15:24.512
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 15:15:30.530
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 15:18:57.480
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 15:21:24.985
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-23 15:22:02.922
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 15:22:08.726
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 15:33:18.841
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 15:35:04.715
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:00:24.582
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:00:50.886
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:01:07.075
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:08:30.542
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:09:33.933
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:10:14.898
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:11:04.184
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:12:14.893
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:15:51.825
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:22:49.007
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:23:54.163
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:25:31.996
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:25:50.731
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:30:26.259
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:33:26.232
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:34:01.833
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:35:25.776
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:43:07.001
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:45:08.853
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:49:31.969
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 16:49:50.932
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:18:44.772
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:21:10.063
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:23:35.263
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:25:29.169
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:27:10.235
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:30:50.044
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:31:33.730
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:33:00.410
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:33:49.465
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:35:42.892
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:35:53.388
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:37:26.473
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:39:25.218
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:42:04.353
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:42:26.586
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:43:09.458
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:44:26.149
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:47:21.529
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:48:23.521
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:49:05.801
+!MESSAGE Classpath changed for project: Chapter06Th
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-23 17:59:51.101
+!MESSAGE Classpath changed for project: Chapter06Th
